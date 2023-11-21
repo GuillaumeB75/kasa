@@ -4,6 +4,7 @@ import "./index.scss";
 import { BrowserRouter as Router } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import RoutesDefinition from "./routes/RoutesConfiguration";
+import Footer from "./components/Footer/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -11,6 +12,7 @@ root.render(
     <Router>
       <RoutesDefinition />
     </Router>
+    <Footer />
   </React.StrictMode>
 );
 
