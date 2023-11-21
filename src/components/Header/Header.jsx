@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.scss";
+import { NavLink } from 'react-router-dom';
 import logoForHeader from "../../assets/images/LOGO_header.png";
 
 function Header() {
@@ -11,7 +12,12 @@ function Header() {
           alt="logo rouge rosé intitulé KASA avec une icone de maison à la place de la première lettre a"
         />
       </div>
-      <div className="">© 2020 Kasa. All rights reserved</div>
+      <NavLink to="/">
+        <div>Accueil</div>
+      </NavLink>
+      <NavLink to="/about">
+        <div>A propos</div>
+      </NavLink>
     </nav>
   );
 }
