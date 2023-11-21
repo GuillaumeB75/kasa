@@ -5,11 +5,14 @@ import { BrowserRouter as Router } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import RoutesDefinition from "./routes/RoutesConfiguration";
 import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    
     <Router>
+    <Header />
       <RoutesDefinition />
     </Router>
     <Footer />
