@@ -1,13 +1,16 @@
 import React from "react";
+import Banner from "../../components/Banner/Banner";
+import backgroundImage from "../../assets/images/banniere_about.png";
 
 
-function Test2() {
+function About() {
   return (
-    <div className="test">
+    <div className="about">
+      <Banner backgroundImage={backgroundImage} />
       <h1>a propos</h1>
       
     </div>
   );
 }
 
-export default Test2;
+export default About;
