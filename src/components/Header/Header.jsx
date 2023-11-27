@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.scss";
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import logoForHeader from "../../assets/images/LOGO_header.png";
 
 function Header() {
@@ -23,3 +23,4 @@ function Header() {
 }
 
 export default Header;
+
