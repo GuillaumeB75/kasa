@@ -1,0 +1,43 @@
+@import "../../sass/utils/variables.scss";
+
+
+.Collapse {
+    .Collapse-section {
+      background-color: #ff616f;
+      color: white;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+  
+      .Collapse-title {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        text-align: left;
+        background-color: inherit;
+        color: inherit;
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      .Collapse-icon {
+        transform: rotate(0);
+        transition: transform 0.3s ease;
+  
+        &.open {
+          transform: rotate(-180deg);
+        }
+      }
+  
+      .Collapse-content {
+        padding: 1rem;
+        border-top: 1px solid white;
+      }
+    }
+  }
+  
