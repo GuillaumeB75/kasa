@@ -7,12 +7,12 @@ const CollapseSection = ({ title, children }) => {
   const toggleOpen = () => setOpen(!isOpen);
 
   return (
-    <div className="Collapse-section">
+    <div className={`Collapse-section ${isOpen ? 'open' : ''}`}>
       <button className="Collapse-title" onClick={toggleOpen}>
         {title}
-        <span className={`Collapse-icon ${isOpen ? "open" : ""}`}>^</span>
+        <span className={`Collapse-icon ${isOpen ? 'open' : ''}`}>^</span>
       </button>
-      {isOpen && <div className="Collapse-content">{children}</div>}
+      <div className="Collapse-content">{children}</div>
     </div>
   );
 };
