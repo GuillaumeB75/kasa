@@ -1,19 +1,30 @@
-.home_presentation {
-  
-  
-    
+.gallery {
+  margin-left: 15px;
+  margin-right: 15px;
+
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .home_title {
-    
-    color: white;
-    width: 50%;
-    font-size: 18px;
-    top: 2rem;
-    left: 2rem;
-    display: flex;
-    justify-content: center;
-    margin: 4vh 8vh 5vh 8vh;
-    grid-gap: 2rem;
-    gap: 2rem;
-  }
+  color: white;
+  width: 50%;
+  font-size: 18px;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  justify-content: center;
+  margin: 4vh 8vh 5vh 8vh;
+  grid-gap: 2rem;
+  gap: 2rem;
+}
