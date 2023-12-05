@@ -1,19 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Card(props) {
   return (
     <div>
       <div className="card">
-        <Link
-          to={{
-            pathname: `/apartment/${props.id}`,
-            state: { flatId: props.id },
-          }}
-        >
+        <NavLink
+          to="/Test1">
           <img src={props.image} alt="" />
           <h2 className="card_title">{props.title}</h2>
-        </Link>
+        </NavLink>
       </div>
     </div>
   );

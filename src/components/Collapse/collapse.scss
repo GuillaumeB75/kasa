@@ -48,15 +48,15 @@
       max-height: 0;
       opacity: 0;
       transition: max-height 0.5s ease, opacity 0.5s ease;
-      padding: 0 1rem; // Ajoutez du padding ici pour éviter un changement brusque lorsque le collapse s'ouvre
+      padding: 0 1rem; // padding  pour éviter un changement brusque lorsque le collapse s'ouvre
     }
 
     &.open {
       .Collapse-content {
-        max-height: 10rem; // Ajustez cette valeur en fonction du contenu
+        max-height: 10rem; 
         opacity: 1;
-        padding-top: 1rem; // Restituez le padding lors de l'ouverture
-        transition: max-height 0.5s ease, opacity 0.5s 0.3s ease; // Ajoutez un délai à l'opacité pour que le texte apparaisse après l'extension
+        padding-top: 1rem; // Restituer le padding lors de l'ouverture
+        transition: max-height 0.5s ease, opacity 0.5s 0.3s ease; // délai à l'opacité pour que le texte apparaisse après l'extension
       }
 
     }
