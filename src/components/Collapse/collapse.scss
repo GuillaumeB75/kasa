@@ -42,9 +42,19 @@
       }
     }
 
+
+    @keyframes collapseTranslateY {
+      from {
+        transform: translateY(-75%);
+      }
+      to {
+        transform: translateY(1%); /* moves the element up by its own height */
+      }
+    }
+    
     .Collapse-content {
       padding: 1rem;
-      border-top: 1px solid white;
+      
       max-height: 0;
       opacity: 0;
       transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -53,10 +63,12 @@
 
     &.open {
       .Collapse-content {
-        max-height: 10rem; 
+        max-height: 5rem; 
         opacity: 1;
         padding-top: 1rem; // Restituer le padding lors de l'ouverture
         transition: max-height 0.5s ease, opacity 0.5s 0.3s ease; // délai à l'opacité pour que le texte apparaisse après l'extension
+        animation: collapseTranslateY 1s ease-in-out forwards;
+
       }
 
     }
