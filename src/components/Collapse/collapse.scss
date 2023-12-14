@@ -48,7 +48,7 @@
         transform: translateY(-75%);
       }
       to {
-        transform: translateY(1%); /* moves the element up by its own height */
+        transform: translateY(-10%); 
       }
     }
     
@@ -57,7 +57,7 @@
       
       max-height: 0;
       opacity: 0;
-      transition: max-height 0.5s ease, opacity 0.5s ease;
+      transition: max-height 0s ease, opacity 0.5s ease;
       padding: 0 1rem; // padding  pour éviter un changement brusque lorsque le collapse s'ouvre
     }
 
@@ -66,7 +66,7 @@
         max-height: 5rem; 
         opacity: 1;
         padding-top: 1rem; // Restituer le padding lors de l'ouverture
-        transition: max-height 0.5s ease, opacity 0.5s 0.3s ease; // délai à l'opacité pour que le texte apparaisse après l'extension
+        transition: max-height 0 s ease, opacity 0.5s 0.3s ease; // délai à l'opacité pour que le texte apparaisse après l'extension
         animation: collapseTranslateY 1s ease-in-out forwards;
 
       }
