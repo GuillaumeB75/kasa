@@ -4,7 +4,7 @@
   .Collapse-section {
     background-color: $background-light;
     color: $color-primary;
-    margin: 1rem 4rem 1rem 4rem;
+    margin: 1rem 11rem 1rem 11rem;
     border-radius: 4px;
     overflow: hidden; 
     
@@ -36,6 +36,7 @@
       transform: rotate(0);
       transition: transform 0.3s ease;
       font-size: 2rem;
+      
 
       &.open {
         transform: rotate(-180deg);
@@ -67,7 +68,7 @@
         opacity: 1;
         padding-top: 1rem; // Restituer le padding lors de l'ouverture
         transition: max-height 0 s ease, opacity 0.5s 0.3s ease; // délai à l'opacité pour que le texte apparaisse après l'extension
-        animation: collapseTranslateY 1s ease-in-out forwards;
+        animation: collapseTranslateY 0.5s ease-in-out forwards;
 
       }
 
