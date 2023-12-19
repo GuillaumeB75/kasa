@@ -67,7 +67,7 @@
 
     &.open {
       .Collapse-content {
-        max-height: 5rem; 
+        max-height: 7rem; 
         opacity: 1;
         padding-top: 1rem; // Restituer le padding lors de l'ouverture
         transition: max-height 0 s ease, opacity 0.5s 0.3s ease; // délai à l'opacité pour que le texte apparaisse après l'extension
