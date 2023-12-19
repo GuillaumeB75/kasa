@@ -7,7 +7,10 @@ function Card(props) {
     <div>
       <div className="card">
         <NavLink
-          to="/Test1">
+           to={{
+            pathname: `/Test1/${props.id}`,
+            state: { flatId: props.id },
+          }}>
           <img src={props.image} alt="" />
           <h2 className="card_title">{props.title}</h2>
         </NavLink>
