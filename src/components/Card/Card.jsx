@@ -8,7 +8,7 @@ function Card(props) {
       <div className="card">
         <NavLink
            to={{
-            pathname: `/Test1/${props.id}`,
+            pathname: `/Apartments/${props.id}`,
             state: { flatId: props.id },
           }}>
           <img src={props.image} alt="" />

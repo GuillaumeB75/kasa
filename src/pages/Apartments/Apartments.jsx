@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function Test1() {
+function Apartments() {
   return (
     <div className="test">
       <h1>appartements</h1>
@@ -10,4 +10,4 @@ function Test1() {
   );
 }
 
-export default Test1;
+export default Apartments;
