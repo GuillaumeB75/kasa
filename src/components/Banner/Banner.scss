@@ -1,4 +1,7 @@
+@import "../../sass/utils/variables.scss";
+
 .banner {
+  position: relative; // Ajouté pour positionner le titre relativement à la bannière
   display: flex;
   justify-content: center;
   margin: 4vh 4vh 5vh 4vh;
@@ -13,5 +16,15 @@
     border-radius: 25px;
   }
 
-
+  .title {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: $color-secondary; 
+    font-family: "Montserrat";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+  }
 }

@@ -8,7 +8,7 @@ import Gallery from "../../components/Gallery/Gallery";
 function Home() {
   return (
     <div className="home_presentation">
-      <Banner backgroundImage={backgroundImage} />
+      <Banner backgroundImage={backgroundImage} title="Chez vous, partout et ailleurs"/>
      
       <Gallery />
       

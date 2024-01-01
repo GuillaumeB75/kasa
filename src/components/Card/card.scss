@@ -1,3 +1,5 @@
+@import "../../sass/utils/variables.scss";
+
 .card {
   position: relative;
   margin-bottom: 1.5rem;
@@ -17,7 +19,7 @@
   position: absolute;
   bottom: 1rem;
   left: 1rem;
-  color: #fff;
+  color: $color-secondary;
   width: 70%;
   font-size: 18px;
   font-weight: 800;
