@@ -24,7 +24,7 @@ function Carroussel(props) {
     }
     setCurrentPicture((currentPicture - 1) % pictures.length);
   };
-  const arePictures = () => {
+  const allPictures = () => {
     return pictures && pictures.length > 1;
   };
 
@@ -41,7 +41,7 @@ function Carroussel(props) {
         ))}
       </div>
 
-      {arePictures() && (
+      {allPictures() && (
         <>
           <button className="btn__next" onClick={moveToPrevious}>
             <i className="fa-sharp fa-solid fa-chevron-left"></i>

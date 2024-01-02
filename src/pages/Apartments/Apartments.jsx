@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./apartments.scss";
 import Carroussel from "../../components/Carroussel/Carroussel";
+import Collapse from "../../components/Collapse/Collapse";
 import data from "../../assets/data/logements.json";
 import { useParams, useNavigate } from "react-router-dom";
 
@@ -26,6 +27,7 @@ function Apartments() {
   return (
     <div className="house-hold">
       <Carroussel pictures={selectedHouse.pictures} />
+      <Collapse title="Description" content={selectedHouse.description} />
     </div>
   );
 }
