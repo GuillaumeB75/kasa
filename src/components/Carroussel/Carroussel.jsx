@@ -2,35 +2,48 @@ import React from "react";
 import "./carroussel.scss";
 import { useState } from "react";
 
+// Fonction composant Carroussel
 function Carroussel(props) {
+  // je récupère des images passées en props
   const pictures = props.pictures;
+  // Utilisation de useState pour suivre l'image actuelle
   const [currentPicture, setCurrentPicture] = useState(0);
 
+  // Fonction pour obtenir la classe CSS en fonction de l'index de l'image
   const getClassName = (index) => {
+    // Si l'index correspond à l'image actuelle, retourner 'show'
     if (index === currentPicture) return "show";
 
     return "";
   };
 
+  // je passe à l'image suivante
   const moveToNext = () => {
+    // je mets à jour l'image actuelle en passant à la suivante
     setCurrentPicture((currentPicture + 1) % pictures.length);
   };
 
+  // Fonction pour revenir à l'image précédente
   const moveToPrevious = () => {
     const indexPicture = currentPicture - 1;
+    // Si l'index est inférieur à 0, je passe à la dernière image
     if (indexPicture < 0) {
       setCurrentPicture(pictures.length - 1);
       return;
     }
+    // Sinon je passe à l'image précédente
     setCurrentPicture((currentPicture - 1) % pictures.length);
   };
-  const allPictures = () => {
+  // Fonction pour vérifier s'il y a plusieurs images
+  const arePictures = () => {
     return pictures && pictures.length > 1;
   };
 
+  // Rendu du composant
   return (
     <div className="houseCover">
       <div className="image__box">
+       
         {pictures.map((pics, index) => (
           <img
             key={pics}
@@ -41,7 +54,8 @@ function Carroussel(props) {
         ))}
       </div>
 
-      {allPictures() && (
+      {/* si plusieurs images j'affiche les boutons */}
+      {arePictures() && (
         <>
           <button className="btn__next" onClick={moveToPrevious}>
             <i className="fa-sharp fa-solid fa-chevron-left"></i>

@@ -9,25 +9,25 @@ function Apartments() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const [selectedHouse, setSelectedHouse] = useState(null);
+  const [selectedApartment, setselectedApartment] = useState(null);
   useEffect(() => {
     const datas = data.find((location) => location.id === id);
 
     if (!datas) {
       navigate("*");
     } else {
-      setSelectedHouse(datas);
+      setselectedApartment(datas);
     }
   }, [id, navigate]);
 
-  if (!selectedHouse) {
-    return <div>Loading...</div>; // Display a loading message or a placeholder
+  if (!selectedApartment) {
+    return <div>Loading...</div>;
   }
 
   return (
     <div className="house-hold">
-      <Carroussel pictures={selectedHouse.pictures} />
-      <Collapse title="Description" content={selectedHouse.description} />
+      <Carroussel pictures={selectedApartment.pictures} />
+      <Collapse title="Description" content={selectedApartment.description} />
     </div>
   );
 }
