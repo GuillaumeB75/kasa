@@ -34,12 +34,12 @@ function Carroussel(props) {
     // Sinon je passe à l'image précédente
     setCurrentPicture((currentPicture - 1) % pictures.length);
   };
-  // Fonction pour vérifier s'il y a plusieurs images
+  // je vérifie s'il y a plusieurs images
   const arePictures = () => {
     return pictures && pictures.length > 1;
   };
 
-  // Rendu du composant
+  
   return (
     <div className="houseCover">
       <div className="image__box">
