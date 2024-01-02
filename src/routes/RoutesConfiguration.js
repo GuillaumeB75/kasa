@@ -10,7 +10,7 @@ const RoutesDefinition = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/Apartments/:flatId" element={<Apartments />} />
+      <Route path="/Apartments/:id" element={<Apartments />} />
       <Route path="/about" element={<About />} />
       <Route path="*" element={<Error />} />
     </Routes>
