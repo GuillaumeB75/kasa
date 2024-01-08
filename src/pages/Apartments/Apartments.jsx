@@ -28,6 +28,11 @@ function Apartments() {
     <div className="house-hold">
       <Carroussel pictures={selectedApartment.pictures} />
       <Collapse title="Description" content={selectedApartment.description} />
+      <Collapse title="Equipements" content=
+                  {selectedApartment.equipments.map((equipment, index) => (
+                    <li key={index}>
+                      {equipment}
+                    </li>))}/>
     </div>
   );
 }
