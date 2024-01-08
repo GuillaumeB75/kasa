@@ -10,7 +10,7 @@ function Collapse ({ title, content }) {
     <div className={`Collapse-section ${isOpen ? 'open' : ''}`}>
       <button className="Collapse-title" onClick={toggleOpen}>
         {title}
-        <span className={`Collapse-icon ${isOpen ? 'open' : ''}`}>^</span>
+        <span className={`Collapse-icon fa-sharp fa-solid fa-chevron-up ${isOpen ? 'open' : ''}`}></span>
       </button>
       <div className="Collapse-content">{content}</div>
     </div>
