@@ -57,12 +57,14 @@
       }
     }
     
+   
+    
     .Collapse-content {
       padding: 1rem;
       
       max-height: 0;
       opacity: 0;
-      transition: max-height 0s ease, opacity 0.5s ease;
+      transition: max-height 1s ease, opacity 0.5s ease;
       padding: 0 1rem; // padding  pour éviter un changement brusque lorsque le collapse s'ouvre
     }
 
@@ -71,9 +73,10 @@
         max-height: 8rem; 
         opacity: 1;
         padding-top: 1rem; // Restituer le padding lors de l'ouverture
-        transition: max-height 0 s ease, opacity 0.5s 0.3s ease; // délai à l'opacité pour que le texte apparaisse après l'extension
-        animation: collapseTranslateY 0.5s ease-in-out forwards;
+        transition: max-height 1s ease, opacity 0.5s 0.3s ease; // délai à l'opacité pour que le texte apparaisse après l'extension
+        animation: collapseTranslateY 1s ease-in-out forwards;
         font-weight: 500;
+       
 
       }
 
