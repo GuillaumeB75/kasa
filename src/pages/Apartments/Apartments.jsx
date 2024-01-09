@@ -30,8 +30,8 @@ function Apartments() {
       <Carroussel pictures={selectedApartment.pictures} />
       <Informations selectedApartment={selectedApartment} />
       <div className="description_box">
-        <Collapse title="Description" content={selectedApartment.description} />
-        <Collapse
+        <Collapse className="description-collapse" title="Description" content={selectedApartment.description} />
+        <Collapse  className="equipment-collapse"
           title="Equipements"
           content={selectedApartment.equipments.map((equipment, index) => (
             <li key={index}>{equipment}</li>
