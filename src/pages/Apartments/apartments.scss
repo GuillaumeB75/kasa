@@ -2,10 +2,23 @@
 
 .house-hold {
     color: $color-primary;  
+    
     .description_box {
       display: flex;
-      gap: 7rem;
-      
+    
+      .Collapse-section {
+        margin: 2rem;
+        width: 50%;
+      }
+      .Collapse-title {
+        width: 100%;
+        
+        
+      }
+
+     
+
 
 }
+
 }
