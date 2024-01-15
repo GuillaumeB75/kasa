@@ -9,5 +9,11 @@
   margin: 2rem 4rem; 
   background-color: $background-light;
   border-radius: 25px;
+
+  @media screen and (max-width: 767px) {
+    background: none;
+    padding: 0;
+    margin: 3rem;
+}
 }
 
