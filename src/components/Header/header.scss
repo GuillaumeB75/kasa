@@ -8,6 +8,11 @@
   gap: 2rem;
   font-size: 25px;
 
+  @media screen and (max-width: 767px) {
+   font-size: 19px;
+   text-transform: uppercase;
+}
+
   & > *:first-child {
     margin-right: auto;
   }
@@ -19,4 +24,14 @@
       text-decoration: underline;
     }
   }
+
+  .header_logo {
+    img {
+        @media screen and (max-width: 767px) {
+            width: 145px;
+            height: 47px;
+        }
+        }
+       
+    }
 }
