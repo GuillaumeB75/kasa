@@ -8,7 +8,8 @@
     
       .Collapse-section {
         margin: 2rem;
-        width: 50%;
+        flex-basis: 50%; // ou autre mesure qui garantit que chaque section a sa propre taille
+    width: 50%; 
       }
       .Collapse-title {
         width: 100%;
