@@ -1,34 +1,27 @@
 @import "../../sass/utils/variables.scss";
 
 .house-hold {
-    color: $color-primary;  
-    
-    .description_box {
-      display: flex;
+  color: $color-primary;
 
-      @media screen and (max-width: 767px) {
-        flex-direction: column;
-    }
-    
-      .Collapse-section {
-        margin: 2rem;
-        flex-basis: 50%; // ou autre mesure qui garantit que chaque section a sa propre taille
-    width: 50%; 
+  .description_box {
+    display: flex;
 
     @media screen and (max-width: 767px) {
-      width: auto;
-      margin: 1rem 2rem 1rem 2rem;
+      flex-direction: column;
+    }
+
+    .Collapse-section {
+      margin: 2rem;
+      flex-basis: 50%; // ou autre mesure qui garantit que chaque section a sa propre taille
+      width: 50%;
+
+      @media screen and (max-width: 767px) {
+        width: auto;
+        margin: 1rem 2rem 1rem 2rem;
+      }
+    }
+    .Collapse-title {
+      width: 100%;
+    }
   }
-      }
-      .Collapse-title {
-        width: 100%;
-        
-        
-      }
-
-     
-
-
-}
-
 }
