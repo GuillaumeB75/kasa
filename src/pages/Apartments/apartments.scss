@@ -5,6 +5,10 @@
     
     .description_box {
       display: flex;
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
     
       .Collapse-section {
         margin: 2rem;

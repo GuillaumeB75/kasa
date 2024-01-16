@@ -14,6 +14,11 @@
         border: none;
         left: 2%;
         background-color: transparent;
+
+        @media screen and (max-width: 767px) {
+            font-size: 35px;
+            bottom: 15%;
+         }
        
             
         }
@@ -30,6 +35,11 @@
         font-size: 6rem;
         border: none;
         background-color: transparent;
+
+        @media screen and (max-width: 767px) {
+            font-size: 35px;
+            bottom: 15%;
+         }
        
             
         }
@@ -41,6 +51,10 @@
         position: absolute;
         left: 47.5%;
         bottom: 8%;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
          
         }
     
@@ -63,6 +77,11 @@
             &.show {
                 opacity: 1;
             }
+
+            @media screen and (max-width: 767px) {
+                height: 350px;
+             }
           
         }
+        
     }

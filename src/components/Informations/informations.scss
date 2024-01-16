@@ -4,6 +4,10 @@
     display: flex;
     margin-bottom: 2rem;
     gap: 1rem;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
     
     .apartment__owner__star{
         margin-right: 6vh;
