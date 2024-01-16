@@ -7,6 +7,7 @@
 
     @media screen and (max-width: 767px) {
         flex-direction: column;
+        margin-bottom: 1rem;
     }
     
     .apartment__owner__star{
@@ -22,14 +23,24 @@
         .on {
             color: $color-primary;
         }
+
+        @media screen and (max-width: 767px) {
+            margin-left: 4vh;
+        }
     }
     .apartment__title{
         flex-grow : 1;
         margin-left: 6vh;
+
     }
     .apartment__owner{
         display: flex;
         flex-direction: column;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: row; 
+            justify-content: space-between;
+        }
        
         
     } 
@@ -39,6 +50,10 @@
         justify-content: flex-end;
         gap: 0.5rem;
         align-items: center;
+
+        @media screen and (max-width: 767px) {
+            order: 1;
+        }
         
     }
     .apartment__owner__badge img{
@@ -51,6 +66,10 @@
     h1 {    
         font-weight: 400;
         margin-block: 0;
+
+        @media screen and (max-width: 767px) {
+            font-size: 25px;
+         }
      }
      h2{
         font-weight: 400;  
