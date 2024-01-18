@@ -4,22 +4,19 @@ import backgroundImage from "../../assets/images/banniere_about.png";
 import Collapse from "../../components/Collapse/Collapse";
 import about from "../../assets/data/about.json";
 
-
 function About() {
   return (
     <>
-    <Banner backgroundImage={backgroundImage} />
-    <div className="about">
-      {about.map((house) => (
+      <Banner backgroundImage={backgroundImage} />
+      <div className="about">
+        {about.map((house) => (
           <Collapse
             key={house.id}
             title={house.title}
             content={house.description}
           />
         ))}
-      
-      
-    </div>
+      </div>
     </>
   );
 }

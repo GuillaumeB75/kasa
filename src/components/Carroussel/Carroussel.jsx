@@ -39,11 +39,9 @@ function Carroussel(props) {
     return pictures && pictures.length > 1;
   };
 
-  
   return (
     <div className="houseCover">
       <div className="image__box">
-       
         {pictures.map((pics, index) => (
           <img
             key={pics}
