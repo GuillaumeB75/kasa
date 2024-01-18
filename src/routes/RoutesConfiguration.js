@@ -5,7 +5,6 @@ import Apartments from "../pages/Apartments/Apartments";
 import About from "../pages/About/About";
 import Error from "../pages/Error/Error";
 
-
 const RoutesDefinition = () => {
   return (
     <Routes>
